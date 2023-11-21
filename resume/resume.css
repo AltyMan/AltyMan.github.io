@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #161919, #13111c, #13111c, #161919);
+    padding: 0;
+    margin: 0;
+    color: #A9A9A9;
+    overflow: hidden;
+}
+header, .header-push {
+    height: 60px;
+}
+header {
+    position: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0e1111;
+}
+.navbar a,div {
+    flex: 1;
+}
+.navbar .hamburger .container {
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar .hamburger .container div {
+    width: 35px;
+    height: 5px;
+    background-color: #A9A9A9;
+    margin: 6px 10px;
+    transition: 0.4s;
+}
+.navbar .hamburger .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.navbar .hamburger .change .bar2 {
+    opacity: 0;
+}
+.navbar .hamburger .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+.navbar .hamburger div:hover div {
+    background-color: #0047ab;
+}
+.navbar .title {
+    flex-grow: 1;
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar .nav-links {
+    text-align: right;
+    transition: 0.2s;
+}
+.navbar .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar .nav-links ul li a {
+    text-decoration: none;
+    color: #A9A9A9;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .nav-links ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+main > section {
+    height: 100%;
+    width: 100%;
+}
+main > section > embed {
+    height: 100%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
